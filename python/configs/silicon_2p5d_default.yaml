@@ -1,0 +1,234 @@
+meta:
+  source_testbench: Amytest1002_3d_f2f_wo_pkg.m
+  description: Seungmin's 2.5D single chip configuration file
+
+system:
+  type:
+    P: 1
+    G: 2
+  bridge:
+    FLAG: 0
+  chip:
+    N: 1
+
+  bridge_ground: 0
+  bridge_power: 0
+  bridge_decap: 0
+
+  pkg:
+    Xsize: 0.0035
+    Ysize: 0.0035
+    wire_p: 1e-12
+    N: 4
+    wire_thick: 1.0e-06
+    decap:
+      - 5.2e-05
+      - 9.350000000000002e-13
+      - 6.76875e-08
+    Rs: 36.685
+    Ls: 2.4e-08
+    ViaR: 1.0e-12
+    ViaN: 1.0e+12
+    mu: 1.257e-06
+
+  board:
+    Rs: 1.0e-12
+    Ls: 2.1e-11
+    decap:
+      - 2.4e-04
+      - 1.9536e-05
+      - 1.66e-04
+
+  BGA:
+    rou: 1.23e-07
+    d: 2.5e-04
+    h: 1.5e-04
+    px: 240.0e-06
+    py: 200.0e-06
+    mu: 1.257e-06
+    scale: 1.0
+    vdd_first: 0
+    staggered: 1
+    custom:
+      para: 1
+      R: 1.0e-12
+
+  TSV:
+    Nbundle: 25.0
+    d: 1.0e-05
+    px: 240.0e-06
+    py: 200.0e-06
+    contact: 0.0
+    liner: 5.0e-07
+    mu: 1.257e-06
+    rou: 3.0e-08
+    thick: 1.0e-04
+    scale: 1.0
+    custom:
+      para: 0
+      R: 1.0e-12
+
+  inter: 0
+  emib: 0
+  emib_via: 0
+  stacked_die: 0
+
+  connect: []
+
+  mesh_V_scaling: 2
+  intermetal:
+    usage: 0
+    rho: 1.68e-08
+    ar: 0.011111
+    pitch: 1.0e-04
+    thick: 1.0e-06
+  pkg_grid:
+    custom: 0
+    px: 240.0e-06
+    py: 200.0e-06
+  inter_grid:
+    custom: 0
+    px: 6.0e-05
+    py: 5.0e-05
+
+  version: 0
+  structure: 3
+  embeddedchip: 0
+  RDL: 0
+  TOV: 0
+  background_last_die_half_area: 0
+
+  tran: 0
+  write: 1
+  gif: 0
+  draw: 1
+  tranplot: 0
+  drawP: 1
+  drawC: 0
+  drawM: 1
+  clamp: 0
+  range:
+    - 0.0
+    - 5.0
+  skip: 0
+  TR_FLAG: 1
+  T: 2.0e-09
+  dt: 2.5e-11
+  Vdd:
+    val: 1.1
+
+chip:
+  N: 1
+  Xsize: 0.0025
+  Ysize: 0.0025
+  xl: 0.0005
+  yb: 0.0005
+
+  power:
+    - 8.081
+  blk_num:
+    - 1
+  map:
+    - [0.25e-03, 0.25e-03, 2e-03, 2e-03, 8.081, 0.05]
+  blk_name:
+    - ""
+  name: SYSTOLIC
+  tsv_map:
+    - 0.0
+    - 0.0
+    - 0.0025
+    - 0.0025
+
+  mesh_grid:
+    custom: 1
+    px: 6.0e-05
+    py: 5.0e-05
+  meshlvl: 0
+
+  Metal:
+    N: [4.0]
+    p: [120e-9]
+    ar: [0.112, 0.32, 0.32, 0.055]
+    pitch: [1.0e-05, 1.0e-05, 1.0e-05, 1.2e-04]
+    thick: [2.8e-07, 8.0e-07, 8.0e-07, 20.0e-07]
+
+  Via:
+    R: [3, 1, 1, 0.5]
+    N: [562500, 562500, 562500, 110000]
+
+  cap_per: [0.05]
+  cap_th: [9.0e-10]
+
+  Tp: 1.0e-09
+  Tr: [4.0e-10]
+  Tf: [4.0e-10]
+  Tc: [2.0e-10]
+
+  TSV:
+    d: 1.0e-05
+    contact: 4.5e-13
+    liner: 2.0e-07
+    mu: 1.257e-06
+    rou: 1.68e-08
+    thick: 1.0e-04
+    Nbundle: 1
+    scale: 1.0
+    px: 240.0e-06
+    py: 200.0e-06
+    vdd_first: 0
+    staggered: 1
+    xoffset: 0.0
+    yoffset: 0.0
+    custom:
+      para: 0
+      R: 1.0e-12
+
+  TOV:
+    rou: 1.68e-08
+    thick: 1.0e-04
+    d: 4.0e-06
+    liner: 2.0e-07
+    mu: 1.257e-06
+    px: 2.4e-04
+    py: 2.0e-04
+    contact: 4.5e-13
+    Nbundle: 4.0
+    custom:
+      para: 1
+      R: 1.0e-12
+
+  ubump:
+    rou: 2.5e-02
+    d: 2.0e-05
+    h: 2.0e-05
+    px: 240.0e-06
+    py: 200.0e-06
+    mu: 1.257e-06
+    scale: 0.666
+    vdd_first: 0
+    staggered: 0
+    xoffset: 0.0e-5
+    yoffset: 7.0e-5
+    custom:
+      para: 0
+      R: 1.0e-12
+
+  c4:
+    rou: 4.0e-07
+    d: 7.5e-05
+    h: 7.5e-05
+    px: 240.0e-06
+    py: 200.0e-06
+    mu: 1.257e-06
+    scale: 1.0
+    Nbundle: 1.0
+    vdd_first: 0
+    staggered: 1
+    custom:
+      para: 0
+      R: 1.0e-12
+
+  HB:
+    R: 0.0
+    custom:
+      R: 1.0e-12

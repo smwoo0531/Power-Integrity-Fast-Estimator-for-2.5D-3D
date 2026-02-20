@@ -1,0 +1,193 @@
+meta:
+  source_testbench: my_testbench_3DHI_study_phase1_2D_0619.m
+  description: Standalone config replacing Excel input for Python 3DHI phase1 2D flow
+system:
+  type:
+    P: 1
+    G: 2
+  bridge:
+    FLAG: 0
+  bridge_ground: 0.0
+  bridge_power: 0.0
+  pkg:
+    Xsize: 0.0035
+    Ysize: 0.0035
+    wire_p: 1.8e-08
+    N: 64
+    wire_thick: 1.0e-05
+    decap:
+    - 5.2e-05
+    - 9.350000000000002e-13
+    - 6.76875e-08
+    Rs: 12
+    Ls: 2.4e-08
+    ViaR: 1.0e-7
+    ViaN: 1000.0
+    mu: 1.257e-06
+  board:
+    Rs: 0.000166
+    Ls: 2.1e-11
+    decap:
+    - 0.00000024
+    - 1.9536e-05
+    - 0.000166
+  BGA:
+    rou: 1.23e-07
+    d: 0.00025
+    h: 0.001
+    px: 0.0004
+    py: 0.0004
+    mu: 1.257e-06
+    scale: 5.0
+  TSV:
+    Nbundle: 16.0
+    d: 1.0e-05
+    px: 0.001
+    py: 0.001
+    contact: 0.0
+    liner: 5.0e-07
+    mu: 1.257e-06
+    rou: 3.0e-08
+    thick: 0.0001
+  bridge_decap: 0.0
+  inter: 0.0
+  emib: 0.0
+  emib_via: 0.0
+  stacked_die: 1.0
+  tran: 0
+  write: 1
+  gif: 0
+  draw: 1
+  tranplot: 0
+  drawP: 1
+  drawC: 0
+  drawM: 1
+  clamp: 0
+  range:
+  - 0.0
+  - 300.0
+  skip: 0
+  TR_FLAG: 1
+  T: 1.0e-07
+  dt: 2.5e-11
+  Vdd:
+    val: 1.1
+  version: 0
+  embeddedchip: 1.0
+  RDL: 0
+  TOV: 0
+  background_last_die_half_area: 0
+  connect: []
+chip:
+  N: 1
+  Xsize: 0.0025
+  Ysize: 0.0025
+  Metal:
+    N:
+    - 4.0
+    - 4.0
+    p:
+    - 1.8e-08
+    - 1.8e-08
+    ar:
+    - 0.112
+    - 0.32
+    - 0.32
+    - 0.022
+    - 0.112
+    - 0.32
+    - 0.32
+    - 0.022
+    pitch:
+    - 1.0e-05
+    - 1.0e-05
+    - 1.0e-05
+    - 1.2e-04
+    - 1.0e-05
+    - 1.0e-05
+    - 1.0e-05
+    - 1.2e-04
+    thick:
+    - 2.8e-07
+    - 8.0e-07
+    - 8.0e-07
+    - 8.0e-07
+    - 2.8e-07
+    - 8.0e-07
+    - 8.0e-07
+    - 8.0e-07
+  Via:
+    R:
+    - 3
+    - 1
+    - 1
+    - 1
+    - 3
+    - 1
+    - 1
+    - 1
+    N:
+    - 562500
+    - 562500
+    - 562500
+    - 110000
+    - 562500
+    - 562500
+    - 562500
+    - 110000
+  cap_per:
+  - 0.05
+  - 0.05
+  cap_th:
+  - 9.0e-10
+  - 9.0e-10
+  power:
+  - 8.0
+  map: []
+  tsv_map:
+  - 0.0
+  - 0.0
+  - 0.0000001
+  - 0.0000001
+  Tp: 1.0e-06
+  Tr:
+  - 4.0e-08
+  Tf:
+  - 4.0e-08
+  Tc:
+  - 2.0e-08
+  blk_name:
+  - ''
+  name: stacked memory
+  blk_num:
+  - 0
+  TSV:
+    d: 1.0e-06
+    px: 0.001
+    py: 0.001
+    contact: 4.5e-13
+    liner: 2.0e-07
+    mu: 1.257e-06
+    rou: 8.0e-08
+    thick: 1.0e-04
+    Nbundle: 16.0
+  ubump:
+    rou: 4.0e-07
+    d: 2.0e-05
+    h: 2.0e-05
+    px: 5.0e-05
+    py: 5.0e-05
+    mu: 1.257e-06
+    scale: 1.0
+  c4:
+    rou: 4.0e-07
+    d: 7.5e-05
+    h: 7.5e-05
+    px: 0.00015
+    py: 0.00015
+    mu: 1.257e-06
+    scale: 1.0
+    Nbundle: 25.0
+  meshlvl: 0 
+  HB:
+    R: 0.0

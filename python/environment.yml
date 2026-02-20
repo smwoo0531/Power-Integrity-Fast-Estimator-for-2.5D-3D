@@ -1,0 +1,11 @@
+name: pdn
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - pandas
+  - openpyxl
+  - matplotlib
+  - pyyaml
