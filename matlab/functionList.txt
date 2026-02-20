@@ -1,0 +1,22 @@
+Function list for PDN simulator
+Li Zheng, 6/4/2015
+
+testbench.m
+	power_noise_sim.m
+		mesh.m
+			my_unique.m
+			block_check.m
+			mymode.m
+		mesh_T.m
+			pkg2chip.m
+		initial.m
+		assign_cap.m (can be optimized when assign blocks)
+			cal_overlap.m
+		assign_current.m
+        Matrix_build.m
+            chip2pkg.m
+            board2pkg.m
+        Noise_solver_ss.m
+        write_map.m
+        display_T.m
+        draw_map.m

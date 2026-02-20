@@ -1,0 +1,32 @@
+Development log
+
+%%%%%%%%%format%%%%%%%%%%%%%%%%%%%%%%%
+Date
+- Event (developer)
+	line #, file name: change
+		reason for the change
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+June 5, 2015
+- Fix a bug (Li Zheng)
+	line 49, assign_current.m: should be divided system.Vdd
+- Fix a bug (Li Zheng)
+	line 45, assign_cap.m: replace "zeros(1:End-start)" with "zeros(1, sum(chip.blk_num))"
+		the former creates a largeEnd-start dimensional matrix which is unnecessray
+	line 103, assign_current.m: replace "zeros(1:End-start)" with "zeros(1, sum(chip.blk_num))"
+		the former creates a largeEnd-start dimensional matrix which is unnecessray
+- Fix a bug (Li Zheng)
+	line 49, 53, 57, 61, assign_cap.m: remove the outer sum() function
+		the outer sum() is not necessary
+	line 107, 111, 115, 119, assign_current.m: remove the outer sum() function
+		the outer sum() is not necessary
+
+Oct 2nd, 2015 (Yang Zhang)
+	Matrix_build
+	Fix the supply voltage point problems. Remove the current equation because ideal power supply point can provide unlimited current.
+	
+Oct 9th, 2015 (Yang Zhang)
+	Matrix_build
+	Fix the inductance assignment issues, finish the whole flow of transient analysis.
+	Parameters are required to be well tuned.

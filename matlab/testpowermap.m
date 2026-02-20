@@ -1,0 +1,1 @@
+M = readmatrix('memPowermapTest.csv');
